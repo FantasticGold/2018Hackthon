@@ -6,7 +6,7 @@
     "pages/details/details",
     "pages/createClass/createClass",
     "pages/problemUI/problemUI",
-    "pages/classUI/classUI
+    "pages/classUI/classUI"
   ],
   "window": {
     "backgroundTextStyle": "light",
