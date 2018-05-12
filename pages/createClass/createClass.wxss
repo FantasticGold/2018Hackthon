@@ -9,7 +9,6 @@
   color: darkcyan;
 }
 
-
 .inputTip {
   margin: 20rpx;
   color: blueviolet;
