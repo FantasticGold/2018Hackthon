@@ -34,11 +34,15 @@ input {
 }
 
 view {
-  text-align: left;
+  text-align: center;
   width: 50;
   height: 20;
 }
 
 #container {
   margin: 20rpx;
+}
+
+#yid {
+  text-align: center;
 }
