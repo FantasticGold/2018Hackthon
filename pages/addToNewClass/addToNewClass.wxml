@@ -6,6 +6,7 @@
 添加<button>加入班级，跳转到页面4 -->
 
 <input placeholder='Your collage name'></input>
-<input placeholder='entrance year'></input>
-<text>/*After input will test if ok*/</text>
-<button bindtap='AddToNewClass'>Add to class</button>
+<input placeholder='Entrance year'></input>
+<input placeholder='Class name'></input>
+
+<button bindtap='searchClass'>search the class</button>

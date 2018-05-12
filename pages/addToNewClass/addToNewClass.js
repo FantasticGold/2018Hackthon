@@ -64,15 +64,14 @@ Page({
   
   },
 
-  AddToNewClass : function() {
+  searchClass : function() {
     // call the database and add into it;
-
-    // go to the class's detail page
-    wx.navigateTo({
-      url: '../details/details',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
+     wx.request({
+      //  url: '../../backcode/router.js',
+       url: 'https://baidu.com',
+       success: (res, status, header) => {
+         console.log(res);
+       }
+     })
   }
 })
