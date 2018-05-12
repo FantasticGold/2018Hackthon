@@ -23,7 +23,7 @@
   </view>
 </view>
 
-<view class="section">
+<view class="name-section">
   <form>
       <input placeholder='请输入班级名称'></input>
   </form>
@@ -38,7 +38,7 @@
 
   
 <view class="submit">
-  <button id="searchButton" bindtap='searchButtonClick'
+  <button class="submit-btn" id="searchButton" bindtap='searchButtonClick'
           form-type='submit' type="primary">
     搜索
   </button>

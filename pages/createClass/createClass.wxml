@@ -19,9 +19,9 @@
   
   <view class="contain">
     <view class="inputTip" id="inputClassNameTip">班级名字</view> 
-    <input height="50px" name='classname' placeholder='例：软工二班'></input>
+    <input style="height:50px" name='classname' placeholder='例：软工二班'></input>
   </view>
-  <view class="btn-area">
-    <button formType="submit" type="primary">提交</button>
+  <view class="submit-section">
+    <button class="submit-btn" formType="submit" type="primary">提交</button>
   </view>
  </form> 

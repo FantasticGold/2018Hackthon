@@ -11,3 +11,6 @@
     <view class="innerInfor">{{item.name}}</view> 
   </view>
 </scroll-view>
+
+<button bindtap='toClass'>classUI</button>
+<button bindtap='toProblem'>problemUI</button>

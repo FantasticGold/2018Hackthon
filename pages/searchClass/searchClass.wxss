@@ -16,6 +16,16 @@
 }
 
 .submit {
-  margin: 20px;
+  position:fixed;
+  bottom:0px;
+  width:100%;
+}
 
+.submit-btn {
+  margin: 20px;
+}
+
+.name-section {
+  margin: 20px;
+  text-align: center
 }

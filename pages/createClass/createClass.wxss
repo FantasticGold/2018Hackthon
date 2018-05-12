@@ -20,10 +20,6 @@
   margin: 40rpx, 0rpx;
 }
 
-.btn-area {
-  text-align: center;
-  margin: 100rpx;
-}
 
 view {
   text-align: center;
@@ -31,4 +27,14 @@ view {
 
 #yid {
   text-align: center;
+}
+
+.submit-section {
+  position:fixed;
+  bottom:0px;
+  width:100%;
+}
+
+.submit-btn {
+  margin:20px;
 }
