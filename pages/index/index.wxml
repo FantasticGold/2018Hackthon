@@ -7,9 +7,16 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+
+  
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 50px;" value="{{entranceYearValue}}" bindchange="bindChange">
+    <picker-view-column id="yid">
+      <view wx:for="{{years}}" style="line-height: 50px">{{item}}年</view>
+    </picker-view-column>
+  </picker-view>
+
   <view>
-    <button bindtap='createNewClass'>创建班级</button>
-    <button bindtap="addToClass">加入班级</button>
+    <button bindtap='createNewClass'>搜索班级</button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
