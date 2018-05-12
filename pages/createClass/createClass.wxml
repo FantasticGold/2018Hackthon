@@ -1,21 +1,32 @@
 <!--pages/createClass/createClass.wxml-->
-<view id="title">创建新的班级</view>
 
+
+<view class="container">
 <form bindsubmit='formSubmit' bindreset='formReset'>
-  <view class="contain">
-    <view class="inputTip" id="inputYearTip">Entrance Year</view> 
-    <input name='entanceyear' type="number"></input>
-  </view>        
-  <view class="contain">
-    <view class="inputTip" id="inputUniTip">Collage name</view> 
-    <input name='collagename'></input>
-  </view>        
+
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 75px;" value="{{entranceYearValue}}" bindchange="bindChange">
+    <picker-view-column id="yid">
+      <view wx:for="{{years}}" style="line-height: 50px">{{item}}年</view>
+    </picker-view-column>
+  </picker-view>
+
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker" style="line-height: 50px">
+      {{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}}
+    </view>
+  </picker>
+  
+
+
   <view class="contain">
     <view class="inputTip" id="inputClassNameTip">Class name</view> 
-    <input name='classname'></input>
+    <input name='classname' placeholder='classname'>1</input>
   </view>
   <view class="btn-area">
     <button formType="submit">提交</button>
-    <button formType="reset">重置</button>
   </view>
+
+
 </form>
+
+  </view>
