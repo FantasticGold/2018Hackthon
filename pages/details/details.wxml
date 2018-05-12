@@ -12,4 +12,5 @@
   </view>
 </scroll-view>
 
-<button bindtap='movToClassUI' id="btn">JUMP</button>
+<button bindtap='toClass'>classUI</button>
+<button bindtap='toProblem'>problemUI</button>

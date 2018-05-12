@@ -139,13 +139,16 @@ Page({
   onShareAppMessage: function () {
   
   },
-
-  movToClassUI: function() {
+  
+  toClass: function () {
     wx.navigateTo({
       url: '../classUI/classUI',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
     })
-  }
+  },
+
+  toProblem: function () {
+    wx.navigateTo({
+      url: '../problemUI/problemUI',
+    })
+  },
 })

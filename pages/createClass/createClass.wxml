@@ -1,11 +1,10 @@
 <!--pages/createClass/createClass.wxml-->
 
 
-<view class="container">
 <form bindsubmit='formSubmit' bindreset='formReset'>
 
 <view class="inputTip" id="yearTip">入学年份</view>
-  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 75px;" value="{{entranceYearValue}}" bindchange="bindChange" name="entranceyear">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 50px;" value="{{entranceYearValue}}" bindchange="bindChange" name="entranceyear">
     <picker-view-column id="yid">
       <view wx:for="{{years}}" style="line-height: 50px">{{item}}年</view>
     </picker-view-column>
@@ -20,10 +19,9 @@
   
   <view class="contain">
     <view class="inputTip" id="inputClassNameTip">班级名字</view> 
-    <input name='classname' placeholder='例：软工二班'></input>
+    <input style="height:50px" name='classname' placeholder='例：软工二班'></input>
   </view>
-  <view class="btn-area">
-    <button formType="submit">提交</button>
+  <view class="submit-section">
+    <button class="submit-btn" formType="submit" type="primary">提交</button>
   </view>
  </form> 
-</view>
