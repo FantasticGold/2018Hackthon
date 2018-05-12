@@ -4,13 +4,12 @@
       <view class="cardtitle">
         <text>问题列表</text>
       </view>
-      <view wx:for="{{questionArray}}" wx:key="unique" class="question" hover-class="hover-question">
+      <view wx:for="{{questionArray}}" wx:key="unique" class="question" hover-class="hover-question" bindtap='problemDetail' data-index='{{index}}'>
         {{item}}
       </view>
     </view>
   </scroll-view>
   <view class="buttons">
-    <button class="button">返回首页</button>
     <button class="button">班级信息</button>
     <button class="button">查询问题</button>
   </view>

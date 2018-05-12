@@ -1,17 +1,24 @@
 /* pages/details/details.wxss */
 
 scroll-view {
-  height: 300rpx;
+  height: 100%;
 }
 
 #classNameView {
   height: 50rpx;
   width: 300rpx;
-  border: 1px solid black;
-  text-align: center;
+  text-align: left; 
   margin: auto;
+  font-size: 20pt;
 }
 
+#collageNameView {
+  height: 50rpx;
+  width: 300rpx;
+   text-align: left; 
+  margin: auto;
+  font-size: 20pt;
+}
 .emptyHolder {
   height: 50rpx;
 }
@@ -19,16 +26,25 @@ scroll-view {
 view {
   margin: auto;
   width: 300rpx;
+  text-align: center;
 }
 
 .innerInfol {
   display: inline-block;
   width: 100rpx;
-  text-align: left;
+  text-align: center;
 }
 
 .innerInfor {
   width: 150rpx;
   display: inline-block;
   text-align: right;
+}
+
+#btn {
+  bottom: 5rpx;
+  width: 100%;
+  color: white;
+  background-color: #09BB07;
+  position: fixed;
 }

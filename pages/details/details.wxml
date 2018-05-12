@@ -5,7 +5,7 @@
 <view id="collageNameView">{{loadParams.collagename}}</view>
 <view class="emptyHolder"/>
 
-<scroll-view scroll-y="true" scroll-with-animation="true">
+<scroll-view scroll-y="true" scroll-with-animation="true" id="mainscrollview">
   <view wx:for="{{memberList}}">
     <view class="innerInfol">{{index + 1}}</view>
     <view class="innerInfor">{{item.name}}</view> 

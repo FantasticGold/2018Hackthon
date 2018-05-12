@@ -117,6 +117,11 @@ Page({
     var a = schoolList[e.detail.value.collagename[0]][e.detail.value.collagename[1]]
     e.detail.value.collagename = a;
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    // {
+    //   classname:
+    //   entranceyear:
+    //   collagename:
+    // }
     var querystring = JSON.stringify(e.detail.value)
     querystring = querystring.slice(1, querystring.length-1)
     querystring = querystring.replace(/\"/g, "").replace(/,/g, "&").replace(/:/g, "=").replace('[', '').replace(']', '')
