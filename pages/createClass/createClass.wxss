@@ -9,13 +9,9 @@
   color: darkcyan;
 }
 
-.contain {
-  margin: 100rpx;
-}
 
 .inputTip {
-  display: inline-block;
-  margin-right: 20rpx;
+  margin: 20rpx;
   color: blueviolet;
 }
 
@@ -29,18 +25,10 @@
   margin: 100rpx;
 }
 
-input {
-  display: inline-block;
-}
-
 view {
   text-align: center;
   width: 50;
   height: 20;
-}
-
-#container {
-  margin: 20rpx;
 }
 
 #yid {

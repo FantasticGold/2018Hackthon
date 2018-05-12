@@ -1,1 +1,34 @@
 /* pages/details/details.wxss */
+
+scroll-view {
+  height: 300rpx;
+}
+
+#classNameView {
+  height: 50rpx;
+  width: 300rpx;
+  border: 1px solid black;
+  text-align: center;
+  margin: auto;
+}
+
+.emptyHolder {
+  height: 50rpx;
+}
+
+view {
+  margin: auto;
+  width: 300rpx;
+}
+
+.innerInfol {
+  display: inline-block;
+  width: 100rpx;
+  text-align: left;
+}
+
+.innerInfor {
+  width: 150rpx;
+  display: inline-block;
+  text-align: right;
+}

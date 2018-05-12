@@ -1,2 +1,13 @@
 <!--pages/details/details.wxml-->
-<text>pages/details/details.wxml</text>
+
+<view id="classNameView">{{loadParams.classname}}</view>
+<view class="emptyHolder"/>
+<view id="collageNameView">{{loadParams.collagename}}</view>
+<view class="emptyHolder"/>
+
+<scroll-view scroll-y="true" scroll-with-animation="true">
+  <view wx:for="{{memberList}}">
+    <view class="innerInfol">{{index + 1}}</view>
+    <view class="innerInfor">{{item.name}}</view> 
+  </view>
+</scroll-view>
