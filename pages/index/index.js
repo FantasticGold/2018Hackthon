@@ -74,7 +74,7 @@ Page({
   },
   createNewClass: function() {
     wx.navigateTo({
-      url: '../page2/page2',
+      url: '../createClass/createClass',
     })
   }
 })
