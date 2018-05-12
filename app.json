@@ -5,7 +5,8 @@
     "pages/addToNewClass/addToNewClass",
     "pages/details/details",
     "pages/createClass/createClass",
-    "pages/problemUI/problemUI"
+    "pages/problemUI/problemUI",
+    "pages/classUI/classUI
   ],
   "window": {
     "backgroundTextStyle": "light",
