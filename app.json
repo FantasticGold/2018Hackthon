@@ -3,10 +3,11 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/addToNewClass/addToNewClass",
-    "pages/page2/page2",
     "pages/details/details",
     "pages/createClass/createClass",
-    "pages/searchClass/searchClass"
+    "pages/searchClass/searchClass",
+    "pages/problemUI/problemUI",
+    "pages/classUI/classUI"
   ],
   "window": {
     "backgroundTextStyle": "light",

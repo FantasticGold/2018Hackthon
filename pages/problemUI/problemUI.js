@@ -1,29 +1,12 @@
-// pages/page3/page3.js
-const date = new Date()
-const years = []
-const collageNames = []
-
-for (let i = 1990; i <= date.getFullYear(); i++) {
-  years.push(i)
-  collageNames.push(i);
-}
-console.log(years)
-console.log(collageNames)
-
+// pages/problemUI/problemUI.js
 Page({
   data: {
-    years: years,
-    year: date.getFullYear(), 
-    collage: "zsdx",   
-    years: [9999],
-    entranceYearValue: ["CHina"]
+    scrollTop: 100
   },
-  bindChange: function (e) {
-    const val = e.detail.value
-    this.setData({
-      year: this.data.years[val[0]],
-    })
+  submit: function () {
+      // Some operations
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -79,6 +62,4 @@ Page({
   onShareAppMessage: function () {
   
   }
-
-  
 })

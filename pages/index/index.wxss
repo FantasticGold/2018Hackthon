@@ -16,10 +16,6 @@
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
-}
-
 #yid {
   text-align: center;
 }
