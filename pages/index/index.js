@@ -1,13 +1,30 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const date = new Date()
+const years = []
+const collageNames = []
+
+for (let i = 1990; i <= date.getFullYear(); i++) {
+  years.push(i)
+}
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    years: years,
+    year: date.getFullYear(),
+    collage: "SYSU",
+    entranceYearValue: [9999]
+  },
+  //年份
+  bindChange: function (e) {
+    const val = e.detail.value
+    this.setData({
+      year: this.data.years[val[0]],
+    })
   },
   //事件处理函数
   bindViewTap: function() {
@@ -44,7 +61,6 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -52,7 +68,6 @@ Page({
     })
   },
   addToClass: function() {
-    console.log(this);
     wx.navigateTo({
       url: '../addToNewClass/addToNewClass',
     })
