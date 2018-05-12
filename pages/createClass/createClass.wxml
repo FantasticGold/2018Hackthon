@@ -1,0 +1,21 @@
+<!--pages/createClass/createClass.wxml-->
+<view id="title">创建新的班级</view>
+
+<form bindsubmit='formSubmit' bindreset='formReset'>
+  <view class="contain">
+    <view class="inputTip" id="inputYearTip">Entrance Year</view> 
+    <input name='entanceyear' type="number"></input>
+  </view>        
+  <view class="contain">
+    <view class="inputTip" id="inputUniTip">Collage name</view> 
+    <input name='collagename'></input>
+  </view>        
+  <view class="contain">
+    <view class="inputTip" id="inputClassNameTip">Class name</view> 
+    <input name='classname'></input>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>

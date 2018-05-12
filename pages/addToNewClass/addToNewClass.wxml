@@ -1,0 +1,12 @@
+<!--pages/addToNewClass/addToNewClass.wxml-->
+<text>addToNewClass.wxml</text>
+<!-- 添加搜索框
+按大学名称，入学年份，班级名称搜索班级
+调用数据库接口，查询，成功和失败
+添加<button>加入班级，跳转到页面4 -->
+
+<input placeholder='Your collage name'></input>
+<input placeholder='Entrance year'></input>
+<input placeholder='Class name'></input>
+
+<button bindtap='searchClass'>search the class</button>
