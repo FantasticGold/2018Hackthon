@@ -1,4 +1,4 @@
-// pages/addToNewClass/addToNewClass.js
+// pages/searchClass/searchClass.js
 Page({
 
   /**
@@ -63,15 +63,10 @@ Page({
   onShareAppMessage: function () {
   
   },
-
-  searchClass : function() {
-    // call the database and add into it;
-     wx.request({
-      //  url: '../../backcode/router.js',
-       url: 'https://w5xic1mt.qcloud.la',
-       success: (res, status, header) => {
-         console.log(res);
-       }
-     })
+  /**
+   * 搜索框点击
+   */
+  searchButtonClick: function(e) {
+    var 
   }
 })

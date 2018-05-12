@@ -1,0 +1,17 @@
+<!--pages/searchClass/searchClass.wxml-->
+
+<template name="msgItem">
+  
+</template>
+
+<text>搜索结果</text>
+<form>
+    <input name='' id="searchInput"></input>
+    <button id="searchButton" bindtap='searchButtonClick'
+            form-type='submit'>
+      搜索
+    </button>
+</form>
+<view>
+  
+</view>

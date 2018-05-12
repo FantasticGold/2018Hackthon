@@ -5,7 +5,8 @@
     "pages/addToNewClass/addToNewClass",
     "pages/page2/page2",
     "pages/details/details",
-    "pages/createClass/createClass"
+    "pages/createClass/createClass",
+    "pages/searchClass/searchClass"
   ],
   "window": {
     "backgroundTextStyle": "light",

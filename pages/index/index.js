@@ -99,8 +99,15 @@ Page({
     })
   },
   createNewClass: function() {
-    wx.navigateTo({
-      url: '../createClass/createClass',
+    // wx.navigateTo({
+    //   url: '../searchClass/searchClass',
+    // })
+    wx.request({
+       url: '../../backcode/router.js',
+      // url: 'https://w5xic1mt.qcloud.la',
+      success: (res, status, header) => {
+        console.log(res);
+      }
     })
   }
 })
