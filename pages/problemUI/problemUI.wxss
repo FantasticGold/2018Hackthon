@@ -1,0 +1,17 @@
+/* pages/problemUI/problemUI.wxss */
+
+.section {
+  margin: 20px;
+}
+
+.section__title {
+  font-size: 16pt;
+}
+
+.context {
+  font-size: 14pt;
+}
+
+.user {
+  color: blue;
+}
