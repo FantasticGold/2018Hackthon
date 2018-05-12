@@ -19,7 +19,7 @@ Page({
     years: years,
     year: date.getFullYear(),
     collage: "SYSU",
-    entranceYearValue: [9999],
+    entranceYearValue: [2018],
 
     schoolList: schoolList,
     multiArray: [["广东省", "上海市"], schoolList[0]],
@@ -114,6 +114,19 @@ Page({
    * 表单提交
    */
   formSubmit: function(e) {
+    var a = schoolList[e.detail.value.collagename[0]][e.detail.value.collagename[1]]
+    e.detail.value.collagename = a;
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    var querystring = JSON.stringify(e.detail.value)
+    querystring = querystring.slice(1, querystring.length-1)
+    querystring = querystring.replace(/\"/g, "").replace(/,/g, "&").replace(/:/g, "=").replace('[', '').replace(']', '')
+    var url = '../details/details?' + querystring;
+    console.log(url)
+    wx.navigateTo({
+      url: url,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   }
 })

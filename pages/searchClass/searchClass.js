@@ -67,6 +67,6 @@ Page({
    * 搜索框点击
    */
   searchButtonClick: function(e) {
-    var 
+    
   }
 })
