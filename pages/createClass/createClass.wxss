@@ -1,14 +1,44 @@
 /* pages/createClass/createClass.wxss */
+#outer {
+  padding: 100rpx;
+}
+
+#title {
+  text-align: center;
+  font-size: 36;
+  color: darkcyan;
+}
+
+.contain {
+  margin: 100rpx;
+}
+
+.inputTip {
+  display: inline-block;
+  margin-right: 20rpx;
+  color: blueviolet;
+}
+
+.btn-area button {
+  display: inline-block;
+  margin: 40rpx, 0rpx;
+}
+
+.btn-area {
+  text-align: center;
+  margin: 100rpx;
+}
 
 input {
-  text-align: center;
-  width: 50;
-  height: 50;
+  display: inline-block;
 }
 
 view {
   text-align: left;
-  margin-left: 20;
   width: 50;
   height: 20;
+}
+
+#container {
+  margin: 20rpx;
 }
