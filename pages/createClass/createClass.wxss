@@ -27,8 +27,6 @@
 
 view {
   text-align: center;
-  width: 50;
-  height: 20;
 }
 
 #yid {

@@ -1,1 +1,21 @@
 /* pages/searchClass/searchClass.wxss */
+
+.section {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.year-section {
+  width: 125px;
+  text-align: center;
+}
+
+.college-section {
+  text-align: center;
+}
+
+.submit {
+  margin: 20px;
+
+}

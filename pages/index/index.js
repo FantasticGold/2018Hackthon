@@ -56,8 +56,7 @@ Page({
   },
   searchClass: function () {
     wx.navigateTo({
-      // url: '../searchClass/searchClass',
-      url: '../problemUI/problemUI'
+      url: '../searchClass/searchClass',
     })
   },
   createNewClass: function() {

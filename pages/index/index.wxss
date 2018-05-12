@@ -6,8 +6,8 @@
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
+  width: 256rpx;
+  height: 256rpx;
   margin: 20rpx;
   border-radius: 50%;
 }
@@ -18,4 +18,12 @@
 
 #yid {
   text-align: center;
+}
+
+.btn-section {
+  margin: 20px;
+}
+
+.btn {
+  margin: 10px;
 }

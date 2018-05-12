@@ -9,9 +9,9 @@
   </view>
   
 
-  <view>
-    <button bindtap='searchClass'>搜索班级</button>
-    <button bindtap='createNewClass'>创建班级</button>
+  <view class='btn-section'>
+    <button class='btn' type="primary" bindtap='searchClass'>搜索班级</button>
+    <button class='btn' type="primary" bindtap='createNewClass'>创建班级</button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
