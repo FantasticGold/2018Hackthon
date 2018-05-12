@@ -1,11 +1,13 @@
 {
   "pages": [
+    "pages/classUI/classUI",
     "pages/index/index",
     "pages/logs/logs",
     "pages/addToNewClass/addToNewClass",
     "pages/page2/page2",
     "pages/details/details",
     "pages/createClass/createClass"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
