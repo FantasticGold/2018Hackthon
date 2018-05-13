@@ -1,0 +1,26 @@
+/* pages/ask/ask.wxss */
+#searchbox {
+  width: 300px;
+  margin: auto;
+  border: lightgray 1rpx solid;
+  text-align: center;
+}
+
+.question {
+  height: 100rpx;
+  line-height: 120rpx;
+  margin: 10px;
+}
+
+.hover-question {
+  opacity: 0.2;
+} 
+
+.askbtn {
+  background-color: #09bb07;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 96%;
+  margin: 2%;
+}

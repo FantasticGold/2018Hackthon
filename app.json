@@ -7,7 +7,8 @@
     "pages/createClass/createClass",
     "pages/searchClass/searchClass",
     "pages/problemUI/problemUI",
-    "pages/classUI/classUI"
+    "pages/classUI/classUI",
+    "pages/ask/ask"
   ],
   "window": {
     "backgroundTextStyle": "light",
