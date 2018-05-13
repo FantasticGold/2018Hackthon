@@ -16,7 +16,7 @@
 
 
   <view class="horizon-section">
-    <text class="prop" style="width:125px;">成员列表</text>
+    <text class="prop" style="width:90px">成员列表</text>
     <scroll-view style="height:200px" scroll-y="true" scroll-with-animation="true">
       <view wx:for="{{memberList}}">
         <view class="innerInfor">{{item.name}}</view> 
