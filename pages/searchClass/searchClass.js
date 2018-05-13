@@ -148,6 +148,12 @@ Page({
   JumpToClassDetails: function(e) {
     console.log(e)
     var classname = this.data.searchResults[e.currentTarget.dataset.index]
+    if (!classname.collagename) {
+      classname.collagename = "中山大学";
+    }
+    if (!classname.entranceyear) {
+      classname.entranceyear = 2018;
+    }
     var querystring = JSON.stringify(classname)
     querystring = querystring.slice(1, querystring.length - 1)
     querystring = querystring.replace(/\"/g, "").replace(/,/g, "&").replace(/:/g, "=").replace('[', '').replace(']', '')
