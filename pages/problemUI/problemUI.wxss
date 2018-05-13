@@ -4,14 +4,29 @@
   margin: 20px;
 }
 
-.section__title {
-  font-size: 16pt;
-}
 
 .context {
   font-size: 14pt;
 }
 
 .user {
-  color: blue;
+  color: blueviolet;
+}
+
+.bottom-section {
+  position: fixed;
+  bottom: 0px;
+  width:100%;
+}
+
+.bottom-text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.bottom-btn {
+  margin: 20px;
+}
+.bottom-content {
+  font-size: 14pt;
+  margin-left: 20px;
 }

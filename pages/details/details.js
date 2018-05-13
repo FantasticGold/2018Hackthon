@@ -139,7 +139,7 @@ Page({
   onShareAppMessage: function () {
   
   },
-
+  
   toClass: function () {
     wx.navigateTo({
       url: '../classUI/classUI',

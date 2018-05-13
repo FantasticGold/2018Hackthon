@@ -9,7 +9,6 @@
   color: darkcyan;
 }
 
-
 .inputTip {
   margin: 20rpx;
   color: blueviolet;
@@ -32,6 +31,12 @@ view {
 .submit-section {
   position:fixed;
   bottom:0px;
+  width:100%;
+}
+
+.top-section {
+  position:fixed;
+  top:20px;
   width:100%;
 }
 

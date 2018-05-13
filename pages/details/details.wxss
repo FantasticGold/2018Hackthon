@@ -1,17 +1,19 @@
 /* pages/details/details.wxss */
 
 scroll-view {
-  height: 300rpx;
+  height: 100%;
 }
 
-#classNameView {
+ #classNameView {
+  text-align: left;
+} 
+#collageNameView {
   height: 50rpx;
   width: 300rpx;
-  border: 1px solid black;
-  text-align: center;
+   text-align: left; 
   margin: auto;
+  font-size: 20pt;
 }
-
 .emptyHolder {
   height: 50rpx;
 }
@@ -19,16 +21,37 @@ scroll-view {
 view {
   margin: auto;
   width: 300rpx;
-}
-
-.innerInfol {
-  display: inline-block;
-  width: 100rpx;
-  text-align: left;
+  text-align: center;
 }
 
 .innerInfor {
   width: 150rpx;
   display: inline-block;
-  text-align: right;
+  text-align: left;
+}
+
+.join-section {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+#join-btn {
+  margin:20px;
+}
+.horizon-section {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-around;
+}
+
+.top-section {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+}
+.prop {
+  color: blueviolet;
 }
