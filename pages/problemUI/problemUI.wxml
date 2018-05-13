@@ -25,7 +25,7 @@
 
 <view class="bottom-section">
   <view class="bottom-content">
-    <view class="user">我</view>
+    <view class="user">Gold</view>
   </view>
   <view class="bottom-text">
     <form bindsubmit="bindFormSubmit" style="height: 100px">
