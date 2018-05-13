@@ -2,13 +2,12 @@
 
 <view class="section">
   <view class="context">
-    <text style="color:blue">A同学\n</text>
+    <text class="user">A同学\n</text>
     <text>想问一下各位dalao这周计组有作业吗？\n\n</text> 
   </view>
 </view>
 
 <view class="section">
-  <view class="section__title">回答</view>
   <scroll-view scroll-y="true" style="height: 100px;" scroll-top="{{scrollTop}}">
     <view class="context">
       <view class="user">B同学</view>
@@ -24,13 +23,19 @@
 </view>
 
 
-<view class="section">
-  <view class="section__title">回应</view>
-  <form bindsubmit="bindFormSubmit" style="height: 100px">
-    <view class="context">
-      <textarea placeholder="这题我会" name="textarea" maxlength='-1' style='height:100px'/>
-    </view>
-  </form>
+<view class="bottom-section">
+  <view class="bottom-content">
+    <view class="user">我</view>
+  </view>
+  <view class="bottom-text">
+    <form bindsubmit="bindFormSubmit" style="height: 100px">
+      <view class="context">
+        <textarea placeholder="这题我会" name="textarea" maxlength='-1' style='height:100px'/>
+      </view>
+    </form>
+  </view>
 
-  <button bindtap='submit' type="primary">提交</button>
+  <view class="bottom-btn">
+    <button bindtap='submit' type="primary">提交</button>
+  </view>
 </view> 
