@@ -70,6 +70,16 @@ Page({
   
   },
 
+  toDetail: function() {
+    wx.navigateTo({
+      url: '../details/details',
+    })
+  },
+  toProblem: function () {
+    wx.navigateTo({
+      url: '../problemUI/problemUI',
+    })
+  }, 
   problemDetail: function(e) {
     var url = '../problemUI/problemUI?'
     console.log(this.data.questionArray)

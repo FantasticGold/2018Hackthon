@@ -1,16 +1,20 @@
 <view>
   <scroll-view class='scrollview'>
+
     <view class="questioncard">
       <view class="cardtitle">
         <text>问题列表</text>
       </view>
-      <view wx:for="{{questionArray}}" wx:key="unique" class="question" hover-class="hover-question" bindtap='problemDetail' data-index='{{index}}'>
-        {{item}}
-      </view>
+      <scroll-view id="probs" scroll-y="true" scroll-with-animation="true">
+        <view wx:for="{{questionArray}}" wx:key="unique" class="question" hover-class="hover-question" bindtap='toProblem'>
+          {{item}}
+        </view>
+      </scroll-view>
     </view>
+
   </scroll-view>
   <view class="buttons">
-    <button class="button">班级信息</button>
-    <button class="button">查询问题</button>
+    <button class="button" type="primary" bindtap='toDetail'>班级信息</button>
+    <button class="button" type="primary">查询问题</button>
   </view>
 </view>
