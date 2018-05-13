@@ -1,16 +1,31 @@
 <!--pages/details/details.wxml-->
 
-<view id="classNameView">{{loadParams.classname}}</view>
-<view class="emptyHolder"/>
-<view id="collageNameView">{{loadParams.collagename}}</view>
-<view class="emptyHolder"/>
-
-<scroll-view scroll-y="true" scroll-with-animation="true" id="mainscrollview">
-  <view wx:for="{{memberList}}">
-    <view class="innerInfol">{{index + 1}}</view>
-    <view class="innerInfor">{{item.name}}</view> 
+<view class="top-section">
+  <view class="horizon-section">
+    <text class="prop">入学年份</text>
+    <view id="classNameView">{{loadParams.entranceyear}}</view>
   </view>
-</scroll-view>
+  <view class="horizon-section">
+    <text class="prop">大学名称</text>
+    <view id="classNameView">{{loadParams.collagename}}</view>
+  </view>
+  <view class="horizon-section">
+    <text class="prop">班级名称</text>
+    <view id="classNameView">{{loadParams.classname}}</view>
+  </view>
 
-<button bindtap='toClass'>classUI</button>
-<button bindtap='toProblem'>problemUI</button>
+
+  <view class="horizon-section">
+    <text class="prop" style="width:125px;">成员列表</text>
+    <scroll-view style="height:200px" scroll-y="true" scroll-with-animation="true">
+      <view wx:for="{{memberList}}">
+        <view class="innerInfor">{{item.name}}</view> 
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+
+<view class="join-section">
+  <button id="join-btn" type='primary' bindtap='toClass'>加入班级</button>
+</view>
