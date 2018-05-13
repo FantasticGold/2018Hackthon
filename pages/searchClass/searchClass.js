@@ -144,5 +144,17 @@ Page({
     // wx.navigateTo({
     //   url: url
     // });
+  },
+  JumpToClassDetails: function(e) {
+    console.log(e)
+    var classname = this.data.searchResults[e.currentTarget.dataset.index]
+    var querystring = JSON.stringify(classname)
+    querystring = querystring.slice(1, querystring.length - 1)
+    querystring = querystring.replace(/\"/g, "").replace(/,/g, "&").replace(/:/g, "=").replace('[', '').replace(']', '')
+    var url = '../details/details?' + querystring;
+    wx.navigateTo({
+      url: url
+    })
   }
+
 })

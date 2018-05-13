@@ -36,7 +36,7 @@
   </view>
 </form>
 
-<view id="searchResultsShow" wx:for="{{searchResults}}">
+<view id="searchResultsShow" wx:for="{{searchResults}}" data-index="{{index}}" bindtap='JumpToClassDetails'>
   <view style='text-align: left'>{{item.classname}}</view>
   <view style='text-align: right'>{{item.classmembersnum}}</view>
 </view>
