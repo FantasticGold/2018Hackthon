@@ -1,7 +1,8 @@
 <!--pages/searchClass/searchClass.wxml-->
 
-<template name="msgItem">
-  
+<template name="classItem">
+  <view>{{classname}}</view>
+  <view>{{classmembersnum}}</view>
 </template>
 
 <view class="section">
@@ -23,25 +24,21 @@
   </view>
 </view>
 
-<view class="name-section">
-  <form>
-      <input placeholder='请输入班级名称'></input>
-  </form>
-</view>
-
-<!-- <view class="section">
-  <text>搜索结果</text>
-  <form>
-      <input name='' id="searchInput"></input>
-  </form>
-</view> -->
-
+<form bindsubmit='searchButtonClick'>
+  <view class="name-section">
+        <input name="classname" value="{{classname}}" placeholder='请输入班级名称'></input>
+  </view>
   
-<view class="submit">
-  <button class="submit-btn" id="searchButton" bindtap='searchButtonClick'
-          form-type='submit' type="primary">
-    搜索
-  </button>
+  <view class="submit">
+    <button class="submit-btn" id="searchButton" form-type='submit' type="primary">
+      搜索
+    </button>
+  </view>
+</form>
+
+<view id="searchResultsShow" wx:for="{{searchResults}}">
+  <view style='text-align: left'>{{item.classname}}</view>
+  <view style='text-align: right'>{{item.classmembersnum}}</view>
 </view>
 
 
