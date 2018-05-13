@@ -25,7 +25,8 @@ Page({
     schoolList: schoolList,
     multiArray: [["广东省", "上海市"], schoolList[0]],
     multiIndex: [0, 0],
-  
+
+    searchResults: [ ]
   },
   //年份
   bindChange: function (e) {
@@ -114,8 +115,34 @@ Page({
    * 搜索框点击
    */
   searchButtonClick: function(e) {
-    wx.navigateTo({
-      url: '../details/details',
+    this.setData({
+      searchResults: [
+                      {
+                        classname: "软工一班",
+                        classmembersnum: 43
+                      },
+                      {
+                        classname: "软工二班",
+                        classmembersnum: 45
+                      },
+                      {
+                        classname: "软工三班",
+                        classmembersnum: 47
+                      },
+                      {
+                        classname: "软工四班",
+                        classmembersnum: 49
+                      }
+                    ]
     })
+    console.log(this.data)
+    // var query = e.detail.value    
+    // query = JSON.stringify(query)
+    // query = query.slice(1, query.length-1).replace(/\"/g, "").replace(/:/g, "=")
+    // console.log(query);
+    // var url = '../details/details?' + query
+    // wx.navigateTo({
+    //   url: url
+    // });
   }
 })
