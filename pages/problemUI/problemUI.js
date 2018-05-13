@@ -1,10 +1,40 @@
 // pages/problemUI/problemUI.js
 Page({
   data: {
-    scrollTop: 100
+    scrollTop: 100,
+    answerInput: "",
+    QAList: [
+      {
+        username: 'zhenly',
+        answer: "没有\n"
+      },
+      {
+        username: 'icytown',
+        answer: '我不会\n'
+      },
+      {
+        username: 'gold',
+        answer: "我会啊你求求我啊\n"
+      }
+    ]
   },
   submit: function () {
-      // Some operations
+      var temp = this.data.QAList
+      temp.push({ username: 'suosuoso', answer: this.data.answerInput });
+      wx.showToast({
+        title: '提交成功',
+        icon: 'success'
+      })
+      this.setData({
+        QAList: temp,
+        answerInput: ""        
+      })
+  },
+
+  keyInput: function (e) {
+    this.setData({
+      answerInput : e.detail.value
+    })
   },
 
   /**

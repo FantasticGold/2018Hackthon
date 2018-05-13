@@ -8,16 +8,12 @@
 </view>
 
 <view class="section">
-  <scroll-view scroll-y="true" style="height: 100px;" scroll-top="{{scrollTop}}">
+  <scroll-view scroll-y="true" style="height: 500rpx;" scroll-top="{{scrollTop}}">
     <view class="context">
-      <view class="user">B同学</view>
-      <text>没有\n\n</text>
-      <view class="user">B同学</view>
-      <text>没有\n\n</text>
-      <view class="user">B同学</view>
-      <text>没有\n\n</text>
-      <view class="user">B同学</view>
-      <text>没有\n\n</text>
+      <block wx:for="{{QAList}}">
+        <view class="user">{{item.username}}</view>
+        <text>{{item.answer}}\n</text>
+      </block>
     </view>
   </scroll-view>
 </view>
@@ -25,12 +21,12 @@
 
 <view class="bottom-section">
   <view class="bottom-content">
-    <view class="user">我</view>
+    <view class="user">Suosuoso</view>
   </view>
   <view class="bottom-text">
     <form bindsubmit="bindFormSubmit" style="height: 100px">
       <view class="context">
-        <textarea placeholder="这题我会" name="textarea" maxlength='-1' style='height:100px'/>
+        <textarea auto-focus='true' placeholder="这题我会" name="textarea" maxlength='-1' style='height:100px' bindinput='keyInput'/>
       </view>
     </form>
   </view>

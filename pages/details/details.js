@@ -1,17 +1,17 @@
 // pages/details/details.js
 const memberList = [
   {
-    name: "巩泽群",
+    name: "Suosuoso",
     sid: 16340000,
     note: "我就是我"
   },
   {
-    name: "古文鑫",
+    name: "gold",
     sid: 16340001,
     note: "我就是我"
   },
   {
-    name: "黄俊凯",
+    name: "thunder",
     sid: 16340002,
     note: "我就是我"
   },
@@ -21,50 +21,36 @@ const memberList = [
     note: "我就是我"
   },
   {
-    name: "古文鑫",
+    name: "zhenly",
     sid: 16340001,
     note: "我就是我"
   },
   {
-    name: "黄俊凯",
+    name: "icytown",
     sid: 16340002,
     note: "我就是我"
   },
   {
-    name: "我很皮",
+    name: "mega",
     sid: 16340003,
     note: "我就是我"
   },
   {
-    name: "古文鑫",
+    name: "sqdalao",
     sid: 16340001,
     note: "我就是我"
   },
   {
-    name: "黄俊凯",
+    name: "xiuxiu",
     sid: 16340002,
     note: "我就是我"
   },
   {
-    name: "我很皮",
+    name: "cxj",
     sid: 16340003,
     note: "我就是我"
   },
-  {
-    name: "古文鑫",
-    sid: 16340001,
-    note: "我就是我"
-  },
-  {
-    name: "黄俊凯",
-    sid: 16340002,
-    note: "我就是我"
-  },
-  {
-    name: "我很皮",
-    sid: 16340003,
-    note: "我就是我"
-  }
+
 ]
 
 var loadParams = new Object()
@@ -141,14 +127,19 @@ Page({
   },
   
   toClass: function () {
+    var querystring = JSON.stringify(this.data.loadParams)
+    querystring = querystring.slice(1, querystring.length - 1)
+    querystring = querystring.replace(/\"/g, "").replace(/,/g, "&").replace(/:/g, "=").replace('[', '').replace(']', '')
+    
+    var url = '../classUI/classUI?' + querystring;
     wx.navigateTo({
-      url: '../classUI/classUI',
+      url: url,
     })
   },
 
   toProblem: function () {
     wx.navigateTo({
-      url: '../problemUI/problemUI',
+      url: '../problemUI/problemUI'
     })
   },
 })

@@ -2,23 +2,23 @@
 Page({
 
   data: {
+    classname:{},
     questionArray: [
       "鸡生蛋还是蛋生鸡？",
       "保住头发好还是肝完代码好？",
-      "这周的计组作业是什么？",
+      "想问各位dalao这周计组有作业吗？",
       "cocos2d-x怎么配置？",
       "删库跑路是怎样一种体验？",
       "有没有期末考试资料？",
       "这周作业什么时候交？",
-      "这周的计组作业是什么？",
-      "cocos2d-x怎么配置？",
-      "删库跑路是怎样一种体验？",
-      "有没有期末考试资料？",
-      "这周作业什么时候交？"
+      "这周的计组作业是什么？"
     ]
   },
   
-  onLoad: function () {
+  onLoad: function (options) {
+    this.setData({
+      classname: options
+    })
   },
 
   /**
@@ -71,8 +71,12 @@ Page({
   },
 
   toDetail: function() {
+    var querystring = JSON.stringify(this.data.classname)
+    querystring = querystring.slice(1, querystring.length-1)
+    querystring = querystring.replace(/\"/g, "").replace(/,/g, "&").replace(/:/g, "=").replace('[', '').replace(']', '')
+    var url = '../details/details?' + querystring;
     wx.navigateTo({
-      url: '../details/details',
+      url: url,
     })
   },
   toProblem: function () {
