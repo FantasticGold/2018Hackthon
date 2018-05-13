@@ -15,6 +15,6 @@
   </scroll-view>
   <view class="buttons">
     <button class="button" type="primary" bindtap='toDetail'>班级信息</button>
-    <button class="button" type="primary">查询问题</button>
+    <button class="button" type="primary" bindtap='toAsk'>查询问题</button>
   </view>
 </view>

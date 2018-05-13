@@ -79,18 +79,23 @@ Page({
     wx.navigateTo({
       url: '../problemUI/problemUI',
     })
-  }, 
-  problemDetail: function(e) {
-    var url = '../problemUI/problemUI?'
-    console.log(this.data.questionArray)
-    var params = this.data.questionArray[e.currentTarget.dataset.index];
-    url = url + JSON.stringify(params).replace(/\"/g, "");
-    console.log(url);
+  },
+  toAsk: function () {
     wx.navigateTo({
-      url: url,
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+      url: '../ask/ask',
     })
-  }
+  }, 
+  // problemDetail: function(e) {
+  //   var url = '../problemUI/problemUI?'
+  //   console.log(this.data.questionArray)
+  //   var params = this.data.questionArray[e.currentTarget.dataset.index];
+  //   url = url + JSON.stringify(params).replace(/\"/g, "");
+  //   console.log(url);
+  //   wx.navigateTo({
+  //     url: url,
+  //     success: function(res) {},
+  //     fail: function(res) {},
+  //     complete: function(res) {},
+  //   })
+  // }
 })
