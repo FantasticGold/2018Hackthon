@@ -1,0 +1,9 @@
+<form class='form'>
+  <input placeholder="查询问题" id="searchbox" bindinput="bindKeyInput" auto-focus/>
+</form>
+<scroll-view class='scrollview'>
+  <view wx:for="{{queryArray}}" wx:key="unique" class="question" hover-class="hover-question" bindtap='problemDetail' data-index='{{index}}'>
+    {{item}}
+  </view>
+</scroll-view>
+<button class='askbtn' bindtap='ask'>提问</button>
